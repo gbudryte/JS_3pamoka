@@ -10,14 +10,14 @@ function willGetCandy(marks) {
   if (average > 9) {
     numberOfCandy = 3;
   }
-  if ((7 <= average)&(average <= 9)) {
+  if (7 <= average && average <= 9) {
     numberOfCandy = 2;
   } 
-  else {
+  if (average<7) {
     numberOfCandy = 1;
   }
   return numberOfCandy;
 }
 
-let marks_gotten = [8,9,6,5,10]
+let marks_gotten = [10,10,10,8,9]
 console.log(willGetCandy(marks_gotten))

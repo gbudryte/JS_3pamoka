@@ -17,7 +17,7 @@ function pricePaid(a, b, k, n1, n2, n3) {
       price = n1 * k;
       console.log(`We are buying ${n1} pastries`)
     }
-    if ((a < k)&(k< b)) {
+    if (a < k && k< b) {
       price = n2 * k;
       console.log(`We are buying ${n2} pastries`)
     }
@@ -25,7 +25,7 @@ function pricePaid(a, b, k, n1, n2, n3) {
       price = n3 * k;
       console.log(`We are buying ${n3} pastries`)
     }
-    return price;
+    return price.toFixed(2);
   } 
   else {
     console.log("a should be below b");
