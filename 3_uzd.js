@@ -10,7 +10,7 @@ function willGetCandy(marks) {
   if (average > 9) {
     numberOfCandy = 3;
   }
-  if (7 <= average <= 9) {
+  if ((7 <= average)&(average <= 9)) {
     numberOfCandy = 2;
   } 
   else {
